@@ -29,6 +29,9 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */		
+		for (int count = 9999999; count > 0; count --) {
+			 tryCode(count);
+		 }
 
 	}
 
@@ -44,7 +47,7 @@ public class SafeCracker {
 		}
 	}
 
-	private void playTheSoundOfSuccess() {
+	 	private void playTheSoundOfSuccess() {
 		
 		String path = "src/_02_methods/_2_safe_cracker/";
 		if (canPlaySounds) {	
