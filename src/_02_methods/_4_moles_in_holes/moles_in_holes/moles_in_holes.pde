@@ -14,14 +14,14 @@ void setup() {
      ellipse(300, 60, 100, 30);
      ellipse(297, 350, 100, 30);
 }
-
 void draw() {
 
 /* Write code here that uses the drawMole method to put a mole in each of the holes */
-int count= 0;
-int count2=0;
-drawMole(count, count2);
-
+  drawMole(200, 200);
+  drawMole(70, 120);
+  drawMole(300, 60);
+  drawMole(300, 350);
+  println(mouseX + " " + mouseY);
 }
 
 void drawMole(int moleX, int moleY) {

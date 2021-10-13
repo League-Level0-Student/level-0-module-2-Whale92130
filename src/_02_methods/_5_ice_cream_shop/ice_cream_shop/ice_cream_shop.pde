@@ -7,14 +7,21 @@ void setup(){
      size(500,500);
      
      // Call the makeIceCreamCone() method below to draw the cone for your ice cream
-
+    makeIceCreamCone();
      // Use the addScoop method below to add as many scoops of ice cream as you want
      // Choose a different flavor for each scoop
-
+        addScoop("Chocolate");
+        addScoop("Vanilla");
+        addScoop("Strawberry");
+        addSprinkle(300);
+}
      // Use the method provided to add some sprinkles to your ice cream
 
      // Write code to add a cherry to the top of your ice cream. Hint: ellipse
-
+void draw() {
+    fill(#FF0505);
+     ellipse (250, 25, 50, 50);
+      println(mouseX + " " + mouseY);
 }
 
 /***********  These are methods for you to use. DON'T CHANGE CODE BELOW THIS LINE !!!   *****************/
@@ -34,7 +41,7 @@ void makeIceCreamCone(){
 
 void addScoop(String flavor){
      noStroke();
-     if(flavor.equalsIgnoreCase("chocolate")){
+     if(flavor.equalsIgnoreCase("Chocolate")){
          fill(116,71,16);
      }
      else if(flavor.equalsIgnoreCase("Strawberry")){
