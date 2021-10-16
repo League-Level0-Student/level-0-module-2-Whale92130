@@ -25,18 +25,20 @@ public class StringsCannotAdd {
 			//yes I did
 			// Insert fourAsString inside the parenthesis of Integer.parseInt() and set the method equal to fourAsInt
 			// Hint: int fourAsInt = Integer.parseInt(fourAsString);
-			num4 = Integer.parseInt(num4);
+			int num4I = Integer.parseInt(num4);
 			// 7) Do the same for sixAsString. 
-			
+			int num6I = Integer.parseInt(num6);
+			int num5I = Integer.parseInt(fiveAsString);
 			// 8) Print the addition of fourAsInt and sixAsInt using JOptionPane 
-			
+			System.out.println(num4I + num6I);
 			// Did you notice the value 10? If so, hurray! You just changed the type of your variable from String to int.
 			
 			// 9) Convert fiveAsString to fiveAsInt using Integer.parseInt();  
 			
 			// 10) Print the addition of fourAsInt, sixAsInt, and fiveAsInt using JOptionPane 
-			
+			System.out.println(num4I + num6I + num5I);
 			// Is your value now 15 instead of 465?
+			//yes
 	}
 	}
 
